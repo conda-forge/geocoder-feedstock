@@ -8,6 +8,8 @@ source:
   fn: geocoder-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/geocoder/geocoder-{{ version }}.tar.gz
   md5: d34a2d89fa3b6e381a7f2663208703de
+  patches:
+    - setup_py-utf8.patch
 
 build:
   number: 0
