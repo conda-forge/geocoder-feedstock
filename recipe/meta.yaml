@@ -9,7 +9,7 @@ source:
   url: https://pypi.io/packages/source/g/geocoder/geocoder-{{ version }}.tar.gz
   sha256: 1de8cdaa6364acf932e2ad20dabafbfc2faf237ab02fcc8982a3350ff9d93dae
   patches:
-    - setup_py-utf8.patch
+    - setup_py-utf8.patch  # [win and py3k]
 
 build:
   number: 0
