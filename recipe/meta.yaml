@@ -1,4 +1,4 @@
-{% set version = "1.20.0" %}
+{% set version = "1.21.2" %}
 
 package:
   name: geocoder
@@ -7,7 +7,7 @@ package:
 source:
   fn: geocoder-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/geocoder/geocoder-{{ version }}.tar.gz
-  md5: d34a2d89fa3b6e381a7f2663208703de
+  sha256: 1de8cdaa6364acf932e2ad20dabafbfc2faf237ab02fcc8982a3350ff9d93dae
   patches:
     - setup_py-utf8.patch
 
