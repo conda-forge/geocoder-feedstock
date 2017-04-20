@@ -1,4 +1,4 @@
-{% set version = "1.22.3" %}
+{% set version = "1.22.4" %}
 
 package:
   name: geocoder
@@ -7,7 +7,7 @@ package:
 source:
   fn: geocoder-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/geocoder/geocoder-{{ version }}.tar.gz
-  sha256: e2019c7b72d8c5e7471d66e75d36d1bfc4d9fbeb28f35513f5dbf3205cf5d50f
+  sha256: d0d240b06d6ad633294395f7ccc64524db1e1c7721737d989f73337d78cbcba7
   patches:
     - setup_py-utf8.patch  # [win and py3k]
 
@@ -32,9 +32,6 @@ requirements:
 test:
   imports:
     - geocoder
-  #commands:
-    # FIXME AttributeError: 'Command' object has no attribute 'cli'
-    #- geocode "Ottawa, ON"
 
 about:
   home: https://github.com/DenisCarriere/geocoder
