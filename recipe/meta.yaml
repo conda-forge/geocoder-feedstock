@@ -14,6 +14,8 @@ source:
 build:
   number: 0
   script: python -m pip install --no-deps .
+  entry_points:
+    - geocode=geocoder:cli
 
 requirements:
   build:
