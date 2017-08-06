@@ -1,31 +1,31 @@
-{% set version = "1.23.2" %}
+{% set version = "1.25.0" %}
 
 package:
   name: geocoder
   version: {{ version }}
 
 source:
-  fn: geocoder-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/geocoder/geocoder-{{ version }}.tar.gz
-  sha256: 5e294b87dc26482dc97d1aeee765c8db20161418c16ec125ea2bef8fffca5f2f
+  sha256: b5965307d019838840a59a4befc2a54a928b39a372f1b1e8ef014811ce681048
   patches:
     - setup_py-utf8.patch  # [win and py3k]
 
 build:
   number: 0
-  script: python -m pip install --no-deps .
+  script: python setup.py install --single-version-externally-managed --record=record.txt
   entry_points:
     - geocode=geocoder:cli
 
 requirements:
   build:
     - python
-    - pip
+    - setuptools
   run:
     - python
     - requests
     - ratelim
     - click
+    - orderedset
     - six
 
 test:
