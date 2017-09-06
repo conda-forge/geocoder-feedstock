@@ -14,9 +14,7 @@ Summary: Geocoder is a simple and consistent geocoding library.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/geocoder-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/geocoder-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/geocoder-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/geocoder-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/geocoder-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/geocoder-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/geocoder-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/geocoder-feedstock)
 
 Current release info
 ====================
