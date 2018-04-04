@@ -1,4 +1,4 @@
-{% set version = "1.38.0" %}
+{% set version = "1.38.1" %}
 
 package:
   name: geocoder
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/geocoder/geocoder-{{ version }}.tar.gz
-  sha256: 4d67ef60f62b8c46552f9f740457984d7db7aab15cd9ec2f3fef756952ed22a8
+  sha256: c9925374c961577d0aee403b09e6f8ea1971d913f011f00ca70c76beaf7a77e7
 
 build:
   number: 0
