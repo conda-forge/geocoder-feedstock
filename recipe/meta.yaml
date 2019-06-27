@@ -9,9 +9,9 @@ source:
   sha256: c9925374c961577d0aee403b09e6f8ea1971d913f011f00ca70c76beaf7a77e7
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - geocode = geocoder.cli:cli
 
@@ -24,8 +24,8 @@ requirements:
     - requests
     - ratelim
     - click
-    - orderedset
     - six
+    - future
 
 test:
   imports:
@@ -35,9 +35,9 @@ test:
 
 about:
   home: https://github.com/DenisCarriere/geocoder
-  license: Apache 2.0
+  license: Apache-2.0
   license_file: LICENSE
-  summary: 'Geocoder is a simple and consistent geocoding library.'
+  summary: 'Geocoder is a simple and consistent geocoding library'
 
 extra:
   recipe-maintainers:
